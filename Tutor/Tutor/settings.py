@@ -27,7 +27,7 @@ SECRET_KEY = 'dv$68_(#le^3_kqney^qzm79czm!7p-@*wc^_9wrv2354f_#j1'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 
@@ -126,8 +126,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles' )
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static' ),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIR = (
+    os.path.join(BASE_DIR, 'static')
+)
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Configure Django App for Heroku.
