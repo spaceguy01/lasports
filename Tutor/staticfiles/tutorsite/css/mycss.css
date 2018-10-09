@@ -1,0 +1,46 @@
+/* ALL PAGES */
+.title{
+  background-color:rgb(160, 212, 245);
+  text-align:center;
+}
+
+h1, h2 , h3 , h4, h5, h6{
+  text-align: center;
+  font-family:'Montserrat', sans-serif;
+  color:black;
+}
+
+
+/* NAVI-BAR */
+.nav-item {
+  margin-left:80px;
+}
+
+.image{
+  height:350px;
+  width:auto;
+  overflow: hidden;
+}
+
+.area{
+  text-align: left;
+  padding-left: 200px;
+}
+
+.cont {
+  margin-bottom: -150px;
+  margin-top: -100px;
+}
+
+/* HOME PAGE */
+#subjects{
+  color:green;
+}
+
+#about{
+  color:orange;
+}
+
+#contact {
+  color:#1298B1;
+}

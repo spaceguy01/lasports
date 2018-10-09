@@ -1,0 +1,39 @@
+{% extends 'tutorsitekr/base.html' %} {% load static %} {% block content %}
+<div class="jumbotron text-center title">
+  <h1>문의 연락처</h1>
+</div>
+<div class="container">
+<div class="row text-center no-gutters align-items-center mt-4 mt-md-5" style="border: 1px solid #e1e1e1;">
+  <div class="col-md-6 md-6">
+  <div class="cont container"><h5>궁금한점이 있으시면 전화주세요!<br><br>
+        전화 / 이메일 로 오늘 연락주세요!<hr>
+        213-605-1401<br><br>
+        Joonyi@gmail.com</h5>
+
+    </div>
+  </div>
+
+  <div class="col-md-6 md-6">
+  <img src="{% static 'tutorsitekr/img/agent.jpg' %}" alt="" class="image alignnone  img-fluid lazyloaded">  </div>
+</div>
+</div>
+</div><br><br>
+<div class="container" style="background-color:white">
+  <h5>현재 다음 지역에 서비스 중입니다:<hr></h5><br>
+  <br>
+<div class="container">
+  <div class="row text-center">
+
+    <div class="col-sm-6 area">
+
+        <img src="{% static 'tutorsitekr/img/map.png' %}"> 엘에이 LA 중심도시<br><br>
+        <img src="{% static 'tutorsitekr/img/map.png' %}"> 베러리 힐스<br><br>
+        <img src="{% static 'tutorsitekr/img/map.png' %}"> 센츄리 시티
+    </div>
+    <div class="col-sm-6 area">
+
+      <img src="{% static 'tutorsitekr/img/map.png' %}"> 싼타 모니카<br><br>
+      <img src="{% static 'tutorsitekr/img/map.png' %}"> 한인타운<br><br>
+      <img src="{% static 'tutorsitekr/img/map.png' %}"> 웨스트 엘에이
+    </div></div> </div></div>
+{% endblock %}

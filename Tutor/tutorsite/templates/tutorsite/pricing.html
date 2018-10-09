@@ -1,0 +1,102 @@
+{% extends 'tutorsite/base.html' %} {% load static %} {% block content %}
+<div class="jumbotron text-center title">
+  <h1>Our Prices</h1><hr>
+  <h5>Simple Pricing Menu for Easy Decision<br><br>
+    Easy Billing and Payment. We accept cash, check, credit card, or PayPal</h5><br>
+  <h6>* Cryptocurrency payment option may be available in the future</h6>
+</div>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h5><p class="lead text-center">We meet students in their homes or chosen location and work around their schedules. </p><br>
+      <p class="text-center">Choose the level that you're seeking help on. Personalized price for different levels of learning</p>
+    </h5></div>
+
+    <!-- PRICING CARDS  START -->
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header" style="background-color:rgba(255, 196, 196, 1)">
+            <h4 class="my-0 font-weight-normal">Basic</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$40 <small class="text-muted">/ hour</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Algebra</li>
+              <li>Algebra 2</li>
+              <li>Astronomy</li>
+              <li>ASVAB Math</li>
+              <li>Geometry</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header" style="background-color:rgb(184, 255, 216)">
+            <h4 class="my-0 font-weight-normal">Intermediate</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$45 <small class="text-muted">/ hr</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+
+              <li>Pre-Calculus / Trigonometry</li>
+              <li>Non-Calculus Based Physics</li>
+              <li>Chemistry</li>
+              <li>ACT Math</li>
+              <li>SAT Math</li>
+              <li>Statistics</li>
+              <li>Programming</li>
+              <li>Korean</li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header" style="background-color:rgba(195, 185, 255, 0.66)">
+            <h4 class="my-0 font-weight-normal">Advanced</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$50 <small class="text-muted">/ hr</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Calculus AB / BC</li>
+              <li>Calculus Based Physics</li>
+              <li>AP Classes</li>
+              <li>SAT Subject Test</li>
+
+            </ul>
+          </div>
+        </div>
+      </div><br><br>
+      <div class="container text-center" style="background-color:rgba(238, 238, 238, 0.76)">
+      <ul><br>
+        <li><p>* Minimum 2 hour sessions. Our experience indicates that a minimum 2 hour session is best for learning and going through the materials.</li></h6>
+        <li>* Discount available for weekly or monthly scheduled sessions. Consistent tutoring is great for improving results!</li></ul></h6></p><br></div>
+      <!-- PRICE CARDS END -->
+
+      <!-- NEXT CARDS --><br>
+      <hr><br>
+      <div class="row text-center">
+            <div class="col-lg-4">
+              <img class=" img-full" src="{% static 'tutorsite/img/science.jpg' %}" alt="Generic placeholder image" width="auto" height="150"><br><br><br>
+              <h2>STEM Majors</h2><br>
+              <p>Learn the subjects from people who have shown passion in their major.
+              Our tutors are STEM majors who has proven skills and knowledge in the subjects they tutor. <br><br>No more lessons from non-STEM Majors
+               with inadequte understanding of the subject!</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="img-full" src="{% static 'tutorsite/img/class.png' %}" alt="Generic placeholder image" width="auto" height="150"><br><br><br>
+              <h2>Private / Semi-Private</h2><br>
+              <p>Choose from 1-on-1 attention that maximizes a student's time in a personalized session, or in small groups of 3 or less, working
+                with the same tutor to achieve great results at a reduced value. <br><br>
+                Available for SAT Math, ACT Math, and other test preps. Ask us!</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="img-full" src="{% static 'tutorsite/img/schedule.jpg' %}" alt="Generic placeholder image" width="auto" height="150"><br><br><br>
+              <h2>Flexible Scheduling</h2><br>
+              <p>We meet students in their homes or chosen location and work around their schedules. With this flexibility,
+              we can accomodate even the busiest academic, work, or athletic schedules.</p><br>
+              <p>Let us know what works for you!</p>
+
+
+            </div><!-- /.col-lg-4 -->
+          </div></div>
+
+{% endblock %}
