@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+AstroPyDev - Home
+{% endblock title %}
+
+{% block body %}
+<main role="main">
+  <section class="text-center main">
+    <div class="container">
+      <h1 class="jumbotron-heading">Welcome to my homepage!</h1><br><br>
+        <img class="card-img-top" src="{% static 'img/joon.png' %}" style="width:400px;height:auto;" alt="My Photo"><br><br><br>
+      <p class="lead">My name is  <span class="name">Joon Yi</span> and I'm a <span class="dev">Python / Django / PostgreSql</span> developer based in Los Angeles, California.</p><br>
+      <ul>
+        <p class="lead skills">My skills include such as : </p>
+        <li class="dev-item my-2">Web Design : Django, Flask, JavaScript</span></li>
+        <li class="dev-item my-2">Web Scraping : BeautifulSoup, Selenium</span></li>
+        <li class="dev-item my-2">Data Analysis & Visualization : Pandas, Matplotlib, Seaborn, Tableau, R</span> </li>
+        <span class="dev-item my-2">and more!</span>
+      </ul><br><br>
+      <ul>
+        <p class="lead future">I'm always improving and learning new skills. My future plans include working on : </p>
+        <li class="future-item my-2">Financial Analysis (stocks)</li>
+        <li class="future-item my-2">Cryptocurrency Trading Bot</li>
+        <li class="future-item my-2">Ecommerce</li>
+      </ul><br><br>
+      <ul>
+        <p class="lead tutor">I am also available for private tutoring : </p>
+        <li class="tutor-item my-2">Math : Algebra, Geometry, Algebra 2, Trigonometry / Pre-Calculus, Calculus</li>
+        <li class="tutor-item my-2">Physics : Conceptual Physics, Calculus Based Physics</li>
+        <li class="tutor-item my-2">Korean : Speaking, Writing, Reading, Conversation</li>
+      </ul>
+      <br><br><p class="lead contact">
+        If you want to contact me or see all of my skills, please click on my <a href="{% url 'resume' %}">Resume</a> or simply click on the link below to send me a message!<br><br>
+        <a href="mailto:joonyi@gmail.com" class="btn btn-primary my-2">Email Me!</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+{% endblock body%}
