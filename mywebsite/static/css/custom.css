@@ -178,3 +178,16 @@ hr {
 .tutor-item {
   font-size: 1.2em;
 }
+
+.jumbo {
+  background-color:#EDEAE5;
+}
+
+.card-img-top {
+  height: 200px;
+  overflow: hidden;
+}
+
+.album{
+  back-ground-color: #EDEAE5 !important
+}
