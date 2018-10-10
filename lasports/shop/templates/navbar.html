@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light my-4">
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item {% if request.resolver_match.url_name == 'home' %} active{% endif %}">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="nav-item {% if request.resolver_match.url_name == 'allProdCat' %} active{% endif %}">
+        <a class="nav-link" href="{% url 'shop:allProdCat' %}">| All Products</a>
+      </li>
+      {% for cat in links %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ cat.get_url }}">|  {{ cat.name }} </a>
+      </li>
+      {% endfor %}
+      <li class="nav-item {% if request.resolver_match.url_name == 'allProdCat' %} active{% endif %}">
+        <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i> ()</a></li>
+      </ul>
+        <form class="form-inline my-2 my-lg-0" action="{% url 'search:searchResult' %}" method="GET">
+          {% csrf_token %}
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+  </div>
+</nav>
+</nav>
