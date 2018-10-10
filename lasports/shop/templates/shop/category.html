@@ -43,12 +43,12 @@
     <div class="container">
       <div class="row mx-auto">
         {% for product in products %}
-          <div class="my_bottom_margin col-9 col-sm-12 col-md-4 col-md-12 col-lg-4">
-            <div class="card text-center" style="min-width: 18rem;">
+          <div class="my_bottom_margin col-9 col-sm-12 col-md-4 col-md-12 col-lg-4 ">
+            <div class="card text-center" style="min-width: 1rem;">
               <a href="{{ product.get_url }}"><img class="card-img-top my_image" src="{{ product.image.url }}" class="catimage"alt="{{ product.name }}"></a>
               <div class="card-body">
                 <h4>{{ product.name }}</h4>
-                <p class="prod_price"><b>${{ product.price }}<b></p>
+                <p class="prod_price"><b>${{ product.price }}</b></p>
               </div>
             </div>
           </div>
@@ -65,5 +65,5 @@
           {% endif %}
         </div>
         <br>
-      </div>
+    </div>
 {% endblock body %}

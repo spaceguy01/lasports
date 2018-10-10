@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color:
 }
 
 li.active > a {
@@ -42,7 +43,7 @@ li.active > a {
 
 .my_row_class .mx-auto p {
   color:#000;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .my_row_class .mx-auto p a{
@@ -52,7 +53,6 @@ li.active > a {
 }
 
 .catimage {
-  width:auto;
   height: 250px;
 }
 
@@ -102,7 +102,7 @@ li.active > a {
   padding: 15px;
 }
 
-/**** PRODUCT PAGE ****/
+*** PRODUCT PAGE ****/
 .my_prod_row_class {
   padding-top: 15px;
   padding-bottom: 20px;
