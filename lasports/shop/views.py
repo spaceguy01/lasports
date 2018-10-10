@@ -33,5 +33,3 @@ def ProdCatDetail(request, cat_slug, product_slug):
     except Exception as e:
         raise e
     return render(request, 'shop/product.html', {'product':product})
-
-    

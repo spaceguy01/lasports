@@ -1,17 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-light my-4">
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item {% if request.resolver_match.url_name == 'home' %} active{% endif %}">
-        <a class="nav-link" href="{% url 'home' %}">Home</a>
-      </li>
-      <li class="nav-item {% if request.resolver_match.url_name == 'allProdCat' %} active{% endif %}">
-        <a class="nav-link" href="{% url 'shop:allProdCat' %}">| All Products</a>
-      </li>
-      {% for cat in links %}
-      <li class="nav-item">
-        <a class="nav-link" href="{{ cat.get_url }}">|  {{ cat.name }} </a>
-      </li>
-      {% endfor %}
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link {% if request.resolver_match.url_name == 'home' %} active{% endif %}" href="{% url 'shop:allProdCat' %}">All Products</a>
+        <a class="nav-item nav-link {% if request.resolver_match.url_name == 'Dodgers' %} active{% endif %}" href="{% url 'shop:allProdCat' %}">| Dodgers</a>
+        <a class="nav-item nav-link {% if request.resolver_match.url_name == 'Kings' %} active{% endif %}" href="{% url 'shop:allProdCat' %}">| Kings</a>
+        <a class="nav-item nav-link {% if request.resolver_match.url_name == 'Lakers' %} active{% endif %}" href="#">| Lakers</a>
+        <a class="nav-item nav-link {% if request.resolver_match.url_name == 'Bruins' %} active{% endif %}" href="#">| UCLA Bruins |</a>
+      </div>
       <li class="nav-item {% if request.resolver_match.url_name == 'allProdCat' %} active{% endif %}">
         <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i> ()</a></li>
       </ul>
