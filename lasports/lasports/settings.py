@@ -86,12 +86,12 @@ WSGI_APPLICATION = 'lasports.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mywebsitedb',
-        'USER': 'postgres',
-        'PASSWORD': 'Joonbug1',
-        'HOST':'localhost',
-        'PORT': 5432,
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': 'mywebsitedb',
+                'USER': 'postgres',
+                'PASSWORD': 'Joonbug1',
+                'HOST':'localhost',
+                'PORT': 5432,
     }
 }
 
