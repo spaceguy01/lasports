@@ -30,14 +30,14 @@ def allProdCat(request, cat_slug = None):
         products = paginator.page(page)
     except (EmptyPage, InvalidPage):
         products = paginator.page(paginator.num_pages)
-    return render(request, 'category.html', {'category':cat_page, 'products':products})
+    return render(request, 'shop/category.html', {'category':cat_page, 'products':products})
 
 def ProdCatDetail(request, cat_slug, product_slug):
     try:
         product = Product.objects.get(category__slug=cat_slug, slug=product_slug)
     except Exception as e:
         raise e
-    return render(request, 'product.html', {'product':product})
+    return render(request, 'shop/product.html', {'product':product})
 
 def SignupView(request):
     if request.method == 'POST':
@@ -55,7 +55,7 @@ def SignupView(request):
             customer_group.user_set.add(signup_user)
     else:
         form = SignUpForm()
-    return render(request, 'signup.html', {'form':form})
+    return render(request, 'accounts/signup.html', {'form':form})
 
 
 def signinView(request):
