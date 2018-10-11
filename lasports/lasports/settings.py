@@ -25,7 +25,7 @@ SECRET_KEY = '*7o%225u1*_c3q!(=&dbjtxt83%l!*(o4t()gp@lu($+&_7$2('
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
