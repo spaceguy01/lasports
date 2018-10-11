@@ -24,6 +24,11 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('shop/', include('shop.urls')),
     path('search/', include('search.urls')),
+    path('cart/', include('cart.urls')),
+    path('order/', include('order.urls')),
+    path('account/create/', views.SignupView, name="signup"),
+    path('account/login/', views.signinView, name="signin"),
+    path('account/logout/', views.signoutView, name="signout"),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)

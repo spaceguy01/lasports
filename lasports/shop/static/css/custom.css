@@ -163,3 +163,103 @@ li.active > a {
   padding-bottom: 20px;
   font-weight: bold;
 }
+
+/**** Cart Page ****/
+.my_custom_table {
+  min-width: 400px;
+  font-size: 14px;
+}
+
+.my_custom_thead {
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  background-color: #f8f9fa !important;
+  font-size: 18px;
+}
+
+.custom_image {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+}
+.custom_a {
+  text-decoration: none
+}
+
+.custom_icon {
+  text-decoration: none;
+  color: #868e96 !important;
+}
+
+.my_custom_button {
+  margin-top: 5px;
+}
+
+.cart_total {
+  font-size: 18px;
+}
+
+.item_info {
+  font-size: 16px;
+}
+
+
+/*** STRIPE BUTTON ***/
+.stripe-button-el {
+  width: 100% !important;
+  display:block !important;
+  background-color:  green !important;
+  background-image: none !important;
+}
+
+.stripe-button-el span {
+  display: block ;
+  position: relative;
+  padding: 0px 12px;
+  height: 36px !important;
+  line-height: 36px !important;
+  font-family: 'Montserrat' !important;
+  font-size: 16px !important;
+  color: white !important;
+  background-image: none !important;
+  background: none !important
+}
+
+
+.errorlist li{
+  color:red;
+  font-weight: bold;
+}
+
+.my_custom_div{
+  margin-bottom: 20px !important
+}
+
+.my_top_navbar_div {
+  height:60px;
+  line-height: 50px
+}
+
+.my_custom_menu {
+  text-align: right !important
+}
+
+.my_custom_menu ul li {
+  list-style: none;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 12px;
+  padding-right: 20px;
+  display: inLine;
+}
+
+.my_custom_menu ul li a {
+  text-decoration: none;
+  color: #000;
+  list-style: none;
+  text-transform: uppercase;;
+  letter-spacing: .2em;
+  font-size: 12px;
+}

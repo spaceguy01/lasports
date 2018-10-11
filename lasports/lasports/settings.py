@@ -25,7 +25,7 @@ SECRET_KEY = '*7o%225u1*_c3q!(=&dbjtxt83%l!*(o4t()gp@lu($+&_7$2('
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop',
     'search',
+    'cart',
+    'stripe',
+    'order',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -51,7 +55,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'lasports.urls'
@@ -59,7 +62,8 @@ ROOT_URLCONF = 'lasports.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR,'templates'],
+        'DIRS': [os.path.join(BASE_DIR,'shop','templates/'), os.path.join(BASE_DIR, 'search', 'templates/'),
+                os.path.join(BASE_DIR, 'cart','templates/'), os.path.join(BASE_DIR, 'order', 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,6 +72,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'shop.context_processors.menu_links',
+                'cart.context_processors.counter',
             ],
         },
     },
@@ -133,5 +138,9 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 
-
 django_heroku.settings(locals())
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_iXYV5n3stNFuk0naASfZGuNv'
+STRIPE_SECRET_KEY = 'sk_test_cQlrtx9MFMmCBodbO76Tel3s'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
