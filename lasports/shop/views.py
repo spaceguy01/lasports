@@ -8,7 +8,7 @@ from django.contrib.auth import login, authenticate, logout
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'shop/category.html')
 
 #Category View
 
