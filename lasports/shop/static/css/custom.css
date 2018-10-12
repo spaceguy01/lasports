@@ -24,6 +24,12 @@ li.active > a {
   text-transform: uppercase;
 }
 
+.home_title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 /*** FOOTER ***/
 .my_footer {
