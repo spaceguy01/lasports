@@ -86,8 +86,12 @@ WSGI_APPLICATION = 'lasports.wsgi.application'
 
 DATABASES = {
     'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        		'NAME': 'mywebsitedb',
+        		'USER': 'postgres',
+        		'PASSWORD': 'Joonbug1',
+        		'HOST': 'localhost',
+        		'PORT': 5432,
     }
 }
 
@@ -131,11 +135,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static',),
 ]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static','media')
 
 django_heroku.settings(locals())
 
