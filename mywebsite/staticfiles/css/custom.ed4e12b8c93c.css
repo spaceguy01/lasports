@@ -1,0 +1,193 @@
+body {
+  font-family: 'Open Sans', serif;
+  padding-top: 54px;
+  color: rgb(19, 10, 43);
+  background-color: #EDEAE5
+}
+
+@media (min-width:992px) {
+  body {
+    padding-top: 0;
+    padding-left:0;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Saira Extra Condensed', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem
+}
+
+h2 {
+  font-size: 3.5rem
+}
+
+h3:hover{
+  color:blue;
+}
+
+.mainhead:hover {
+  color:blue;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.35rem;
+}
+
+.subheading:hover {
+  color: #3277eb !important
+}
+
+.list-social-icons a {
+  color: #495057
+}
+
+.list-social-icons a:hover {
+  color: #bd5d38
+}
+
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem
+}
+
+.list-icons {
+  font-size: 3rem
+}
+
+.list-icons .list-inline-item i:hover {
+  color: blue
+}
+
+
+
+section.resume-section {
+  border-bottom: 1px solid black;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none
+}
+
+@media (min-width:768px) {
+  section.resume-section {
+    min-height: 10vh
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem
+  }
+}
+
+@media (min-width:992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important
+  }
+}
+
+.bg-primary {
+  background-color: white !important
+}
+
+.text-primary {
+  color: blue
+}
+.text-secondary {
+  color: gold !important
+}
+
+
+a {
+  color: #38b1bd
+}
+
+a:active, a:focus, a:hover {
+  color: #3277eb
+}
+
+.fa-check:hover {
+  color: #3277eb
+}
+
+.navbar {
+  margin-top: 20px;
+}
+
+.main {
+  margin-top: 40px;
+}
+
+.name{
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.dev {
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.devprog {
+  font-weight: 900;
+}
+hr {
+   color:black !important
+ }
+
+.skills {
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+
+.dev-item {
+  font-size: 1.2em;
+}
+
+.dev-topic{
+  font-size:1.3em;
+}
+
+.contact {
+  font-weight: 400
+}
+
+.future {
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+
+.future-item {
+  font-size: 1.2em;
+}
+
+.tutor {
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+
+.tutor-item {
+  font-size: 1.2em;
+}
+
+.jumbo {
+  background-color:#EDEAE5;
+}
+
+.card-img-top {
+  height: 200px;
+  overflow: hidden;
+}
+
+.album{
+  back-ground-color: #EDEAE5 !important
+}
