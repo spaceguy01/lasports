@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<main role="main">
+      <div class="jumbotron text-center jumbo">
+          <h1 class="jumbotron-heading">Portfolio Page</h1><br><br>
+          <p class="lead text-muted">Here you will find links to the projects I have created. <br><br>Please click on each link to see what I have made! Clicking on a link will open a new window.</p>
+      </div>
+      <div class="album pt-3 pb-2 bg-light">
+        <div class="container album-container">
+          <div class="row">
+            <div class="col-md-4 d-flex">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'img/LaSportsStore.png' %}" alt="LA Sports Store">
+                <div class="card-body">
+                  <p class="card-text">LA Sports Store e-commerce site with merchandise from Los Angeles Sports Teams</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://lasports.herokuapp.com/shop/" target="_blank">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    </div>
+                    <small class="text-muted">Django/PostgreSQL/S3</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'img/python.jpeg' %}" alt="Python Projects">
+                <div class="card-body">
+                  <p class="card-text">This is a GitHub link to the Python Projects page containing various types of Python applications created</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://github.com/spaceguy01/PythonProjects" target="_blank">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    </div>
+                    <small class="text-muted">Python</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top " src="{% static 'img/tutor_site.png' %}" alt="Tutoring Site">
+                <div class="card-body">
+                  <p class="card-text">Simple static page for a tutoring website. In English and Korean.</p><br>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="http://tutoringsite.herokuapp.com/" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    </div>
+                    <small class="text-muted">Django</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="row">
+              <div class="col-md-4 d-flex">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="{% static 'img/data_analysis.jpg' %}" alt="Data Analysis">
+                  <div class="card-body">
+                    <p class="card-text">California Realtor Housing Data Analysis using Python, Pandas, Seaborn and BeautifulSoup</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://github.com/spaceguy01/DataScience/tree/master/Cal_Realtor_May2018_HousingData" target="_blank">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                      </div>
+                      <small class="text-muted">Python/Pandas/BS</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-4 d-flex">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'img/data_analysis.jpg' %}" alt="ESPN Basketball Data Analysis">
+                <div class="card-body">
+                  <p class="card-text">ESPN NBA 2017-2018 Season Analysis using Python, Pandas, Seaborn and BeautifulSoup</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://github.com/spaceguy01/DataScience/tree/master/ESPN_NBA_Standing" target="_blank">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    </div>
+                    <small class="text-muted">Python/Pandas/BS</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"  src="{% static 'img/selenium.jpeg' %}" alt="LA Galaxy Ticket Webscraping">
+                <div class="card-body">
+                  <p class="card-text">Webscraping Los Angeles Galaxy Tickets on StubHub website using Python and Selenium</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://github.com/spaceguy01/DataScience/tree/master/StubHub_LA_Galaxy/StubHub_LA_Galaxy_Tickets" target="_blank">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    </div>
+                    <small class="text-muted">Python/Selenium</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 d-flex">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'img/beautifulsoup.jpg' %}" alt="ESPN World Cup Scrape">
+                <div class="card-body">
+                  <p class="card-text">ESPN 2018 World Cup Score Webscraping using Python and BeautifulSoup</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://github.com/spaceguy01/DataScience/tree/master/ESPN_World_Cup_Score_Scrape" target="_blank">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    </div>
+                    <small class="text-muted">Python/BeautifulSoup</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"  src="{% static 'img/selenium.jpeg' %}" alt="LA Galaxy Games Webscraping">
+                <div class="card-body">
+                  <p class="card-text">Webscraping Los Angeles Galaxy Games on StubHub website using Python and Selenium</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://github.com/spaceguy01/DataScience/tree/master/StubHub_LA_Galaxy/StubHub_LA_Galaxy_Games" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    </div>
+                    <small class="text-muted">Python/Selenium</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'img/flask.png' %}" alt="Flask Booksite">
+                <div class="card-body">
+                  <p class="card-text">Website lising different types of books. Has author, publisher, and description of books.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href=""><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    </div>
+                    <small class="text-muted">Flask/PostgreSQL</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 d-flex">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'img/javascript.png' %}" alt="JavaScript Website">
+                <div class="card-body">
+                  <p class="card-text">Simple Website created using JavaScript, Node.js, and Express.js</p><br>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href=""><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    </div>
+                    <small class="text-muted">JavaScript</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+ </main><br><br>
+{% endblock body %}
+<br><br>
