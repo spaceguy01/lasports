@@ -7,10 +7,15 @@ li.active > a {
   color: blue !important;
 }
 
-.nav-item {
-  letter-spacing: .1em;
+
+.navi {
+  letter-spacing: .15em;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.navi-menu {
+  margin-left: 20px;
 }
 
 .catname {
